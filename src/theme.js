@@ -3,7 +3,7 @@ import { colorsTuple, createTheme } from "@mantine/core";
 
 const theme = createTheme({
   fontFamily: 'Inter, sans-serif',
-  primaryColor: 'purple_500_main',
+  primaryColor: 'purple_500',
   cursorType: 'pointer',
   headings: {
     fontFamily: 'Inter, sans-serif',
@@ -31,7 +31,7 @@ const theme = createTheme({
     purple_200: colorsTuple('#e5d5fa'),
     purple_300: colorsTuple('#d1b4f8'),
     purple_400: colorsTuple('#bd93f7'),
-    purple_500_main: colorsTuple('#9854f6'),
+    purple_500: colorsTuple('#9854f6'),
     purple_600: colorsTuple('#541f9d'),
     my_yellow: colorsTuple('#fab005'),
   }
