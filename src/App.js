@@ -1,11 +1,13 @@
-import classes from './App.module.css';
+import classes from "./App.module.css";
+import { MantineProvider } from "@mantine/core";
+import theme from "./theme.js";
 
 const App = () => {
   return (
-    <div className={classes.App}>
-      bhjnkm,
-    </div>
+    <MantineProvider theme={theme}>
+      <div className={classes.App}>start creating app</div>
+    </MantineProvider>
   );
-}
+};
 
 export default App;
