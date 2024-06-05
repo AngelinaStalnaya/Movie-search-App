@@ -1,0 +1,47 @@
+.inputNum {
+    width: 275px;
+    color: var(--mantine-color-my_black-1);
+} 
+
+.inputNumField {
+    border: 1px solid transparent;
+    transition: border 0.3s ease-in-out;
+}
+
+.inputNumField:focus {
+    border: 1px solid var(--mantine-color-purple_500-1);
+}
+
+.inputNumField:hover {
+    border: 1px solid var(--mantine-color-purple_500-1);
+}
+
+.inputNumBtnWrapper {
+    background-color: transparent;
+}
+
+.inputNumBtn {
+    background-color: transparent;
+    color: var(--mantine-color-grey_500-1);
+    border: none;
+}
+
+.searchInput {
+    width: 658px;
+    height: 48px;
+    color: var(--mantine-color-my_black-1);
+}
+
+.searchInputField {
+    border: 1px solid transparent;
+    transition: border 0.3s ease-in-out;
+}
+
+.searchInputField:focus {
+    border: 1px solid var(--mantine-color-purple_500-1);
+}
+
+.searchInputField:hover {
+    border: 1px solid var(--mantine-color-purple_500-1);
+}
+

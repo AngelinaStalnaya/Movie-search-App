@@ -2,10 +2,10 @@ import React from "react";
 import { Button } from "@mantine/core";
 import classes  from "./Buttons.module.css";
 
-const TextBtn = () => {
+const TextBtn = ({children}) => {
   return (
     <Button className={classes.textBtn} variant="filled">
-      Reset filters
+      {children}
     </Button>
   );
 };
