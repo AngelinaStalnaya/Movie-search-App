@@ -8,6 +8,7 @@ import InputNum from "./components/Inputs/InputNum.jsx";
 import SearchInput from "./components/Inputs/SearchInput.jsx";
 import { useFavicon } from "@mantine/hooks";
 import favicon from './img/svg/favicon.svg';
+import TabsComponent from "./components/Tabs/Tabs.jsx";
 
 const App = () => {
   useFavicon(favicon)
@@ -21,6 +22,7 @@ const App = () => {
         <TextBtn >Reset filters</TextBtn>
         <InputNum placeholder='From'/>
         <SearchInput placeholder='Search movie title'/>
+        <TabsComponent />
       </div>
     </MantineProvider>
   );

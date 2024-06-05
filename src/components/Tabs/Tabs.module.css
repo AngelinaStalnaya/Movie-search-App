@@ -1,0 +1,19 @@
+.tablist {
+    border: none;
+}
+
+.tab {
+    border: none;
+    background-color: transparent;
+    color: var(--mantine-color-my_black-1);
+    transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+}
+
+.tab:hover {
+    color: var(--mantine-color-purple_400-1);
+}
+
+.tab:focus, .tab:active {
+    color: var(--mantine-color-purple_500-1);
+    font-weight: 600;
+}
