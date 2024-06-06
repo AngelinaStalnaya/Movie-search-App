@@ -13,6 +13,7 @@ import ModalComponent from "./components/Modal/Modal.jsx";
 import IconStar from "./components/Icons/IconStar.jsx";
 import IconBtn from './components/buttons/IconBtn.jsx';
 import { IconChevronUp } from '@tabler/icons-react';
+import BreadcrumbsComponent from "./components/Breadcrumbs/Breadcrumbs.jsx";
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
         <ModalComponent modalTitle='Modal rating' title='Coco' />
         <IconStar />
         <IconBtn actionFunc={console.log('chevron up pressed')}><IconChevronUp/></IconBtn>
+        <BreadcrumbsComponent></BreadcrumbsComponent>
 
 
 

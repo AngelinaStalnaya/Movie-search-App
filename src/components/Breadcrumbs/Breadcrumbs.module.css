@@ -1,0 +1,8 @@
+.breadcrumbs {
+    color: var(--mantine-color-purple_500-1);
+}
+
+.separator {
+    color: var(--mantine-color-my_black-1);
+    font-size: 20px;
+}
