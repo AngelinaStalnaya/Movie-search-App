@@ -1,23 +1,26 @@
-import { Tabs } from '@mantine/core';
-import { useState } from 'react';
-import classes from './Tabs.module.css';
+import { Tabs } from "@mantine/core";
+import { useState } from "react";
+import classes from "./Tabs.module.css";
 
-const TabsComponent = ({tabsList}) => {
-    const [activeTab, setActiveTab] = useState(1);
+const TabsComponent = () => {
+  const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <Tabs defaultValue="1" value={activeTab} onChange={setActiveTab}
-        classNames={{
-            list: classes.tablist,
-            tab: classes.tab,
-
-        }}
+    <Tabs
+      defaultValue="1"
+      value={activeTab}
+      onChange={setActiveTab}
+      classNames={{
+        list: classes.tablist,
+        tab: classes.tab,
+      }}
     >
       <Tabs.List>
         <Tabs.Tab value="1" >
           Gallery
         </Tabs.Tab>
-        <Tabs.Tab value="2" >
+        <Tabs.Tab value="2"
+         >
           Messages
         </Tabs.Tab>
         <Tabs.Tab value="3" >
@@ -38,6 +41,6 @@ const TabsComponent = ({tabsList}) => {
       </Tabs.Panel>
     </Tabs>
   );
-}
+};
 
-export default TabsComponent; 
+export default TabsComponent;

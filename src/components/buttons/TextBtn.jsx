@@ -1,10 +1,10 @@
 import React from "react";
 import { Button } from "@mantine/core";
-import classes  from "./Buttons.module.css";
+import classes from "./Buttons.module.css";
 
-const TextBtn = ({children}) => {
+const TextBtn = ({ actionFunc, children }) => {
   return (
-    <Button className={classes.textBtn} variant="filled">
+    <Button className={classes.textBtn} variant="filled" onClick={actionFunc}>
       {children}
     </Button>
   );

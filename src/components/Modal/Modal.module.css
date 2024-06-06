@@ -1,0 +1,39 @@
+.modalRoot {
+    width: 380px;
+}
+
+.modalOverlay {
+    background-color: var(--mantine-color-my_yellow-1);
+    opacity: 0.3;
+}
+
+.modalTitle {
+    font-size: 45px;
+    color: red;
+}
+
+.modalCloseBtn {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+}
+
+.modalBody {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.modalBodyTitle {
+    font-size: 25px;
+    color: blue;
+}
+
+.modalIcons {
+    background-color: transparent;
+}
+
+.modalBtnGroup {
+    display: flex;
+    flex-wrap: nowrap;
+}

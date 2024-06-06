@@ -9,6 +9,7 @@ import SearchInput from "./components/Inputs/SearchInput.jsx";
 import { useFavicon } from "@mantine/hooks";
 import favicon from './img/svg/favicon.svg';
 import TabsComponent from "./components/Tabs/Tabs.jsx";
+import ModalComponent from "./components/Modal/Modal.jsx";
 
 const App = () => {
   useFavicon(favicon)
@@ -23,6 +24,7 @@ const App = () => {
         <InputNum placeholder='From'/>
         <SearchInput placeholder='Search movie title'/>
         <TabsComponent />
+        <ModalComponent modalTitle='Modal rating' title='Coco' />
       </div>
     </MantineProvider>
   );
