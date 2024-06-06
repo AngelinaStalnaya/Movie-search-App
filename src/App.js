@@ -10,6 +10,10 @@ import { useFavicon } from "@mantine/hooks";
 import favicon from './img/svg/favicon.svg';
 import TabsComponent from "./components/Tabs/Tabs.jsx";
 import ModalComponent from "./components/Modal/Modal.jsx";
+import IconStar from "./components/Icons/IconStar.jsx";
+import IconBtn from './components/buttons/IconBtn.jsx';
+import { IconChevronUp } from '@tabler/icons-react';
+
 
 const App = () => {
   useFavicon(favicon)
@@ -25,6 +29,11 @@ const App = () => {
         <SearchInput placeholder='Search movie title'/>
         <TabsComponent />
         <ModalComponent modalTitle='Modal rating' title='Coco' />
+        <IconStar />
+        <IconBtn actionFunc={console.log('chevron up pressed')}><IconChevronUp/></IconBtn>
+
+
+
       </div>
     </MantineProvider>
   );

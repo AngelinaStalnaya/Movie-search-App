@@ -42,3 +42,20 @@
     color: var(--mantine-color-grey_600-1);
     background-color: transparent;
 }
+
+.iconBtn, .iconBtn:hover {
+    background-color: transparent;
+}
+
+.iconBtnIcon {
+    color: var(--mantine-color-grey_500-1);
+    transition: color 0.3s ease-in-out;
+}
+
+.iconBtnIcon:hover{
+    color: var(--mantine-color-purple_400-1);
+}
+
+.iconBtnIcon:active, .iconBtnIcon:focus {
+    color: var(--mantine-color-purple_500-1);
+}

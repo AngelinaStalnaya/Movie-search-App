@@ -6,7 +6,7 @@ import { useState } from "react";
 import PrimaryBtnM from "../buttons/PrimaryBtnM";
 import TextBtn from "../buttons/TextBtn";
 
-const ModalComponent = ({ modalTitle, title }) => {
+const ModalComponent = ({ modalTitle, title,  }) => {
   const [opened, { open, close }] = useDisclosure(false);
   const [value, setValue] = useState(0);
 

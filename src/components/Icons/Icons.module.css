@@ -1,0 +1,11 @@
+.starBtn, .starBtn:hover {
+  background-color: transparent;
+}
+
+.star {
+  color: var(--mantine-color-grey_300-1);
+}
+
+.starRated {
+  color: var(--mantine-color-purple_500-1);
+}
