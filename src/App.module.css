@@ -1,6 +1,9 @@
 .App {
   text-align: center;
   color: var(--mantine-color-purple_500-0);
-  font-size: 50px;
+  font-size: 20px;
   font-family: var(--mantine-font-family);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }

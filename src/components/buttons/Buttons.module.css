@@ -3,6 +3,7 @@
     color: var(--mantine-color-my_white-1);
     font-size: 40px;
     transition: background-color 0.3s ease-in-out;
+    width: fit-content;
 }
 
 .primaryBtnM:hover, .primaryBtnS:hover {
@@ -19,6 +20,7 @@
     color: var(--mantine-color-my_white-1);
     font-size: 30px;
     transition: background-color 0.3s ease-in-out;
+    width: fit-content;
 }
 
 
@@ -26,6 +28,7 @@
     background-color: transparent;
     color: var(--mantine-color-purple_500-1);
     transition: color 0.3s ease-in-out;
+    width: fit-content;
 }
 
 .textBtn:hover {

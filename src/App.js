@@ -1,5 +1,5 @@
 import classes from "./App.module.css";
-import { MantineProvider } from "@mantine/core";
+import { Divider, MantineProvider } from "@mantine/core";
 import theme from "./theme.js";
 import PrimaryBtnM from "./components/buttons/PrimaryBtnM.jsx";
 import PrimaryBtnS from "./components/buttons/PrimaryBtnS.jsx";
@@ -14,7 +14,7 @@ import IconStar from "./components/Icons/IconStar.jsx";
 import IconBtn from './components/buttons/IconBtn.jsx';
 import { IconChevronUp } from '@tabler/icons-react';
 import BreadcrumbsComponent from "./components/Breadcrumbs/Breadcrumbs.jsx";
-
+import DropdownFilter from './components/Dropdown/Dropdown.jsx';
 
 const App = () => {
   useFavicon(favicon)
@@ -22,17 +22,20 @@ const App = () => {
   return (
     <MantineProvider theme={theme}>
       <div className={classes.App}>
-        start creating app
-        <PrimaryBtnM>Save</PrimaryBtnM>
-        <PrimaryBtnS>Search</PrimaryBtnS>
-        <TextBtn >Reset filters</TextBtn>
-        <InputNum placeholder='From'/>
-        <SearchInput placeholder='Search movie title'/>
-        <TabsComponent />
-        <ModalComponent modalTitle='Modal rating' title='Coco' />
-        <IconStar />
-        <IconBtn actionFunc={console.log('chevron up pressed')}><IconChevronUp/></IconBtn>
-        <BreadcrumbsComponent></BreadcrumbsComponent>
+        UI components: 
+        <Divider/>
+        -primaryBTNM: <PrimaryBtnM>Save</PrimaryBtnM>
+        -primaryBtnS: <PrimaryBtnS>Search</PrimaryBtnS>
+        -textBtn: <TextBtn >Reset filters</TextBtn>
+        -inputnNum: <InputNum placeholder='From'/>
+        -searchInput: <SearchInput placeholder='Search movie title'/>
+        -tabscomponent: <TabsComponent />
+        -modalComponent: <ModalComponent modalTitle='Modal rating' title='Coco' />
+        -IconStar: <IconStar />
+        -IconBtn: <IconBtn actionFunc={console.log('chevron up pressed')}><IconChevronUp/></IconBtn>
+        -breadcrumps: <BreadcrumbsComponent />
+        -dropdownMenu: <DropdownFilter  placeholder='Select genre' label='Genres' selectName='Genres filter'/>
+
 
 
 
