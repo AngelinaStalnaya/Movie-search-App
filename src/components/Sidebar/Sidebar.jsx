@@ -1,7 +1,7 @@
 import { NavLink, Paper, Image } from "@mantine/core";
 import { useState } from "react";
 import logo from "./../../img/svg/logo.svg";
-import classes from './Sidebar.module.css'
+import classes from "./Sidebar.module.css";
 
 const Sidebar = ({ data }) => {
   const [active, setActive] = useState(0);
@@ -14,13 +14,17 @@ const Sidebar = ({ data }) => {
         label={item.label}
         onClick={() => setActive(index)}
         w={232}
+        classNames={{
+          root: classes.sidebarLink,
+          active: classes.sidebarLinkActive,
+        }}
       />
     );
   });
 
   return (
     <Paper className={classes.sidebarPaper}>
-      <Image src={logo} className={classes.sidebarLogo}/>
+      <Image src={logo} className={classes.sidebarLogo} />
       {items}
     </Paper>
   );

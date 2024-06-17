@@ -1,12 +1,32 @@
 .sidebarPaper {
     width: 280px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--mantine-color-purple_100-1);
 }
 
 .sidebarLogo {
     height: 40px;
     width: 100px;
     margin-bottom: 70px;
+}
+
+.sidebarLink, .sidebarLink:focus-within {
+    color: var(--mantine-color-my_black-1);
+    border-radius: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.sidebarLink:hover {
+    color: var(--mantine-color-purple_500-1);
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.sidebarLinkActive, .sidebarLink:active {
+    color: var(--mantine-color-purple_500-1);
+    font-weight: 600;
+    background-color: var(--mantine-color-purple_200-1);
 }

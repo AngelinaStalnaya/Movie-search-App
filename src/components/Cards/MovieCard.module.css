@@ -1,0 +1,46 @@
+.Card {
+    width: 482px;
+    background-color: var(--maintine-color-my_white-1);
+    display: flex;
+    gap: 8px;
+    border-radius: 12px;
+
+}
+
+.moviecardImage {
+    width: 119px;
+    height: 170px;
+}
+
+.cardInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 170px;
+}
+
+.cardTitle {
+    color: var(--mantine-color-purple_500-1);
+    margin: 0;
+}
+
+.cardDescr {
+    color: var(--mantine-color-grey_600-1);
+    font-size: 600;
+}
+
+.cardRateNum {
+    color: var(--mantine-color-my_black-1);
+}
+
+.cardRatePeople {
+    color: var(--mantine-color-grey_600-1);
+}
+
+.cardGenresLable {
+    color: var(--mantine-color-grey_600-1);
+}
+
+.cardGenresList {
+    color: var(--mantine-color-my_black-1);
+}

@@ -16,14 +16,26 @@ import favicon from "./img/svg/favicon.svg";
 // import BreadcrumbsComponent from "./components/Breadcrumbs/Breadcrumbs.jsx";
 import DropdownFilter from "./components/Dropdown/Dropdown.jsx";
 import Sidebar from "./components/Sidebar/Sidebar.jsx";
+import MovieCard from "./components/Cards/MovieCard.jsx";
+import poster from './../src/img/poster.png'
 
 const App = () => {
   useFavicon(favicon);
 
   const data = [
     { label: "Movies", href: "movies" },
-    { label: "Rated mavies", href: "ratedmovies" },
+    { label: "Rated movies", href: "ratedmovies" },
   ];
+
+  const item = {
+    src: poster,
+    alt: 'poster',
+    title: 'The Green Mile',
+    year: '1999',
+    stars: '9.3',
+    rates: '2.9M',
+    genres: 'Drama, Crime, Fantasy',
+  }
 
   return (
     <MantineProvider theme={theme}>
@@ -47,6 +59,8 @@ const App = () => {
           selectName="Genres filter"
         />
         -sidebar: <Sidebar data={data} />
+
+        -moviecard small: <MovieCard item={item}/>
       </div>
     </MantineProvider>
   );

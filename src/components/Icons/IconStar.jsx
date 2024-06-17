@@ -3,7 +3,7 @@ import { IconStarFilled } from "@tabler/icons-react";
 import classes from "./Icons.module.css";
 import { useState } from "react";
 
-const IconStar = ({ rateStatus = false }) => {
+const IconStar = ({ rateStatus=false }) => {
   const [rated, setRated] = useState(false);
 
   if (rateStatus) {

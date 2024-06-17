@@ -9,3 +9,7 @@
 .starRated {
   color: var(--mantine-color-purple_500-1);
 }
+
+.starYellow {
+  color: var(--mantine-color-my_yellow-1);
+}
