@@ -4,7 +4,7 @@
     display: flex;
     gap: 8px;
     border-radius: 12px;
-
+    padding: 24px;
 }
 
 .moviecardImage {
@@ -16,7 +16,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 170px;
 }
 
 .cardTitle {
@@ -37,10 +36,25 @@
     color: var(--mantine-color-grey_600-1);
 }
 
-.cardGenresLable {
+.cardPositionLable {
     color: var(--mantine-color-grey_600-1);
 }
 
-.cardGenresList {
+.cardPositionList {
     color: var(--mantine-color-my_black-1);
+}
+
+.CardBig {
+    width: 800px;
+    height: 482px;
+    background-color: var(--maintine-color-my_white-1);
+    display: flex;
+    gap: 16px;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.moviecardImageBig {
+    width: 250px;
+    height: 351px;
 }
