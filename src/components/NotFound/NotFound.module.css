@@ -1,0 +1,9 @@
+.errorContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.errorText {
+    color: var(--mantine-color-my_black-1);
+}

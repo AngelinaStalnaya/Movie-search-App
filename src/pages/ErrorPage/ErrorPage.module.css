@@ -1,0 +1,13 @@
+.errorPage {
+    background-color: var(--mantine-color-my_white-1);
+}
+
+.errorPageContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.errorPageText {
+    color: var(--mantine-color-my_black-1);
+}
+
