@@ -1,0 +1,13 @@
+.emptyStateContainer {
+    background-color: var(--mantine-color-grey_200-1);
+    align-self: center;
+}
+
+.emptyStateImg {
+    width: 400px;
+    height: 300px;
+}
+
+.emptyStateText {
+    color: var(--mantine-color-my_black-1);
+}
