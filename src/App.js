@@ -17,10 +17,10 @@ import favicon from "./img/svg/favicon.svg";
 import DropdownFilter from "./components/Dropdown/Dropdown.jsx";
 import Sidebar from "./components/Sidebar/Sidebar.jsx";
 import MovieCard from "./components/Cards/MovieCard.jsx";
-import poster from './../src/img/poster.png'
+import poster from "./../src/img/poster.png";
 import MovieCardBig from "./components/Cards/MovieCardBig.jsx";
-import posterbig from './../src/img/poster-big.png';
-
+import posterbig from "./../src/img/poster-big.png";
+import PaginationComponent from "./components/pagination/Pagination.jsx";
 
 const App = () => {
   useFavicon(favicon);
@@ -33,20 +33,18 @@ const App = () => {
   const item = {
     src: poster,
     srcBig: posterbig,
-    alt: 'poster',
-    title: 'The Green Mile',
-    year: '1999',
-    stars: '9.3',
-    rates: '2.9M',
-    genres: 'Drama, Crime, Fantasy',
+    alt: "poster",
+    title: "The Green Mile",
+    year: "1999",
+    stars: "9.3",
+    rates: "2.9M",
+    genres: "Drama, Crime, Fantasy",
 
     duration: 189,
-    premiere: 'December 6, 1999',
-    budget: '$125,000,000',
-    gross_worldwide: '$780,006,945',
-  }
-
-  
+    premiere: "December 6, 1999",
+    budget: "$125,000,000",
+    gross_worldwide: "$780,006,945",
+  };
 
   return (
     <MantineProvider theme={theme}>
@@ -70,12 +68,9 @@ const App = () => {
           selectName="Genres filter"
         />
         -sidebar: <Sidebar data={data} />
-
-        -moviecard small: <MovieCard item={item}/>
-      
-          -moviecardBg: <MovieCardBig item={item}/>
-      
-      
+        -moviecard small: <MovieCard item={item} />
+        -moviecardBg: <MovieCardBig item={item} />
+        -pagination : <PaginationComponent total={3}/>
       </div>
     </MantineProvider>
   );

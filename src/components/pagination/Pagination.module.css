@@ -1,0 +1,22 @@
+.pagination {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+
+.paginationControl {
+    color: var(--mantine-color-my_black-1);
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--mantine-color-grey_300-1);
+}
+
+.paginationChevron {
+    color: var(--mantine-color-grey_600-1);
+}
+
+.paginationChevron:disabled {
+    color: var(--mantine-color-grey_300-1);
+}
