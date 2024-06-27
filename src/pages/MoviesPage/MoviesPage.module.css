@@ -1,0 +1,20 @@
+.container {
+    background-color: var(--mantine-color-grey_300-1);
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.sectionHeader {
+    color: var(--mantine-color-my_black-1);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 140%;
+
+}
+
+.filtergroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}

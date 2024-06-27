@@ -8,16 +8,27 @@
 }
 
 .dropdownInputRoot {
-    border: 1px solid red;
+    border-radius: 8px;
+    background-color: var(--mantine-color-my_white-1);
 }
 
 
 .dropdownInput {
-    background-color: aqua;
+    background-color: transparent;
+    border: 1px solid var(--mantine-color-grey_300-1);
+    transition: border 0.3s ease-in-out;
+}
+
+.dropdownInput:hover {
+    border: 1px solid var(--mantine-color-purple_500-1);
 }
 
 .dropdownIcon {
-    color: blue;
+    color: var(--mantine-color-grey_500-1);
+}
+
+.dropdownIconOpened {
+    color: var(--mantine-color-purple_500-1)
 }
 
 
@@ -34,10 +45,14 @@
 }
 
 .dropdownOption:hover {
-    background-color: var(--mantine-color-purple_500-1);
-    color: var(--mantine-color-my_white-1);
+    background-color: var(--mantine-color-purple_100-1);
+    color: var(--mantine-color-my_black-1);
 }
 
+.dropdownOption:focus, .dropdownOption:active {
+    background-color: var(--mantine-color-purple_500-1);
+    color: var(--mantine-color-my_white-1)
+}
 
 .dropdownPillsList {
     background-color: green;

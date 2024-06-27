@@ -1,10 +1,21 @@
 .inputNum {
     width: 275px;
-    color: var(--mantine-color-my_black-1);
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 8px;
+
 } 
 
 .inputNumField {
-    border: 1px solid transparent;
+    border: 1px solid var(--mantine-color-grey_500-1);
+    color: var(--mantine-color-my_black-1);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: var(--mantine-color-my_white-1);
     transition: border 0.3s ease-in-out;
 }
 

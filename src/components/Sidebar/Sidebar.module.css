@@ -17,6 +17,7 @@
     color: var(--mantine-color-my_black-1);
     border-radius: 10px;
     transition: color 0.3s ease-in-out;
+    width: 232px;
 }
 
 .sidebarLink:hover {
