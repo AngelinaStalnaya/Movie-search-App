@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./MoviesPage.module.css";
-import { Container, Group, Text } from "@mantine/core";
+import { Container, Group, Text, Fieldset } from "@mantine/core";
 import DropdownFilter from "../../components/Dropdown/Dropdown";
 import InputNum from "../../components/Inputs/InputNum";
 import TextBtn from "../../components/buttons/TextBtn";
@@ -40,17 +40,20 @@ const sortFilters = [
   "Most Voted",
   "Least Voted",
 ];
+const clearFilters = {};
 
 const clearFiltersCall = () => {
-  console.log("clear all filters");
   clearFilters.clearFilterDropdown();
   clearFilters.clearFilterSelect();
+  clearFilters.clearFilterInput();
+  clearFilters.clearFilterInput();
 };
-const clearFilters =  {};
+
 
 const MoviesPage = () => {
   return (
     <Container className={classes.container}>
+      <Container className={classes.moviesPageFilters}>
       <Text className={classes.sectionHeader}>Movies</Text>
       <Group className={classes.filtergroup}>
         <DropdownFilter
@@ -67,17 +70,43 @@ const MoviesPage = () => {
           data={years}
           clearFilter={clearFilters}
         />
-        <InputNum placeholder="From" min={0} clearFilter={clearFilters}/>
-        <InputNum placeholder="To" max={10} clearFilter={clearFilters}/>
+        <Fieldset legend='Ratings' classNames={{
+          root: classes.inputNumFieldset,
+          legend: classes.inputNumFieldsetLegend,
+          }}>
+          
+          <InputNum
+            placeholder="From"
+            min={0}
+            max={10}
+            clearFilter={clearFilters}
+            id='inputNum'
+          />
+          <InputNum
+            placeholder="To"
+            min={1}
+            max={10}
+            clearFilter={clearFilters}
+            id='inputNum'
+          />
+        </Fieldset>
+          
         <TextBtn actionFunc={clearFiltersCall}>Reset filters</TextBtn>
       </Group>
+      <Group className={classes.separateFilter}>
       <SelectComponent
         label="Sort by"
         data={sortFilters}
         selectName="Sort by"
         defaultValue="Most Popular"
-        // clearFilter={clearFilters}
       />
+      </Group>
+      </Container>
+      <Container className={classes.MoviesPageCatalogue}>
+
+      </Container>
+      
+      
     </Container>
   );
 };

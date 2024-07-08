@@ -4,10 +4,12 @@
 
 .App {
   text-align: center;
-  color: var(--mantine-color-purple_500-0);
+  color: var(--mantine-color-purple_500-1);
+  background-color: var(--mantine-color-grey_100-1);
   font-size: 20px;
   font-family: var(--mantine-font-family);
   display: flex;
   justify-content: flex-start;
   height: 100%;
+  width: 1440px;
 }

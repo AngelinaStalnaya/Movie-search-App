@@ -22,7 +22,7 @@ const SearchInput = ({ placeholder }) => {
       leftSection={searchIcon}
       leftSectionPointerEvents="none"
       rightSection={searchBtn}
-      placeholder={placeholder}
+      placeholder={value.lenght() > 0 ? value : placeholder}
       aria-label="Search movie"
     >
     </TextInput>

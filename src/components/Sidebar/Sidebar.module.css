@@ -4,6 +4,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 24px;
+    margin-bottom: auto;
     background-color: var(--mantine-color-purple_100-1);
 }
 
@@ -17,7 +19,7 @@
     color: var(--mantine-color-my_black-1);
     border-radius: 10px;
     transition: color 0.3s ease-in-out;
-    width: 232px;
+    /* width: 232px; */
 }
 
 .sidebarLink:hover {

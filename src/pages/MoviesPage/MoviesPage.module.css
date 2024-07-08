@@ -1,20 +1,65 @@
 .container {
-    background-color: var(--mantine-color-grey_300-1);
-    display: flex;
-    gap: 40px;
-    flex-direction: column;
+  background-color: transparent;
+  padding: 0;
+  margin: 40px 90px;
+}
+
+.moviesPageFilters {
+  margin: 0;
+  padding: 0;
+  min-width: 980px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .sectionHeader {
-    color: var(--mantine-color-my_black-1);
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 140%;
-
+  color: var(--mantine-color-my_black-1);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 140%;
+  text-align: left;
+  margin-bottom: 40px;
 }
 
 .filtergroup {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+}
+
+.separateFilter {
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+}
+
+.inputNumFieldset {
+  display: flex;
+  gap: 8px;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.inputNumFieldsetLegend {
+  font-size: 16px;
+  color: var(--mantine-color-my_black-1);
+  font-weight: 700;
+  line-height: 140%;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+
+.MoviesPageCatalogue {
+  display: flex;
+
 }

@@ -6,11 +6,10 @@ import { useState } from "react";
 
 const DropdownFilter = ({ label, placeholder, selectName, data, clearFilter  }) => {
   const [dropdownOpened, {toggle}] = useDisclosure();
-  const [value, setValue] = useState();
+  const [value, setValue] = useState([]);
   
   const clearFilterDropdown = () => {
-    console.log('dropdown clear')
-    setValue([]);
+    setValue([])
   }
 
   clearFilter.clearFilterDropdown = clearFilterDropdown;
@@ -18,7 +17,7 @@ const DropdownFilter = ({ label, placeholder, selectName, data, clearFilter  }) 
   return (
     <MultiSelect
       label={label}
-      placeholder={value ? null : placeholder}
+      placeholder={value.length > 0 ? null : placeholder}
       data={data}
       classNames={{
         root: classes.dropdownRoot, 
@@ -38,6 +37,14 @@ const DropdownFilter = ({ label, placeholder, selectName, data, clearFilter  }) 
       onClick={toggle}
       value={value}
       onChange={setValue}
+      onBlur={toggle}
+      onOptionSubmit={(val) => {
+        setValue((current) =>
+          current.includes(val)
+            ? current.filter((item) => item !== val)
+            : [...current, val]
+        );
+      }}
       />
   );
 };

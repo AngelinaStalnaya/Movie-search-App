@@ -21,9 +21,9 @@ const SelectComponent = ({
   };
 
   const clearFilterSelect = () => {
-    console.log("select clear");
     setValue(null);
   };
+
   if (clearFilter) {
     clearFilter.clearFilterSelect = clearFilterSelect;
   }

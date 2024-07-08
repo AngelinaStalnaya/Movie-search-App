@@ -26,9 +26,16 @@
 
 .textBtn {
     background-color: transparent;
-    color: var(--mantine-color-purple_500-1);
+    color: var(--mantine-color-grey_600-1);
     transition: color 0.3s ease-in-out;
     width: fit-content;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    text-align: left;
+    padding: 0;
+    height: 42px;
+    align-self: flex-end;
 }
 
 .textBtn:hover {
