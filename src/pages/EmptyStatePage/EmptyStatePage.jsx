@@ -1,16 +1,17 @@
 import React from "react";
 import classes from "./EmptyStatePage.module.css";
-import { Image, Text } from "@mantine/core";
+import { Image } from "@mantine/core";
 import noRate from "./../../img/no-rate.png";
 import PrimaryBtnM from "./../../components/buttons/PrimaryBtnM";
+import TitleSemibold from "../../components/text/TitleSemibold";
 
 const EmptyStatePage = () => {
   return (
     <div className={classes.emptyStateContainer}>
       <Image src={noRate} alt="no rate" className={classes.emptyStateImg} />
-      <Text className={classes.emptyStateText}>
+      <TitleSemibold>
         You haven't rated any films yet
-      </Text>
+      </TitleSemibold>
       <PrimaryBtnM>Find movies</PrimaryBtnM>
     </div>
   );

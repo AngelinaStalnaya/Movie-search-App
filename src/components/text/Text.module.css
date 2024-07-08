@@ -1,0 +1,15 @@
+.titleSemibold {
+    color: var(--mantine-color-my_black-1);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+}
+
+.textBaseMRegular {
+    color: var(--mantine-color-my_black-1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+}
