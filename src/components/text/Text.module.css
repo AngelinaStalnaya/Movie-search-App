@@ -1,4 +1,12 @@
 .titleSemibold {
+    color: var(--mantine-color-purple_500-1);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+}
+
+.titleSemiboldBlack {
     color: var(--mantine-color-my_black-1);
     font-size: 20px;
     font-weight: 600;
@@ -11,5 +19,53 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 140%;
+    text-align: left;
+}
+
+.textBaseMBold {
+    color: var(--mantine-color-my_black-1);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: left;
+}
+
+.textBaseMBoldPurple {
+    color: var(--mantine-color-purple_500-1);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: left;
+}
+
+.textBaseSubtitle {
+    color: var(--mantine-color-grey_500-1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+}
+
+.textCommonGrey {
+    color: var(--mantine-color-grey_600-1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+}
+
+.textCommonBlack {
+    color: var(--mantine-color-my_black-1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+}
+
+.titleLBold {
+    color: var(--mantine-color-my_black-1);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
     text-align: left;
 }
